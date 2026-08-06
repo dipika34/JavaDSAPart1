@@ -23,9 +23,9 @@ public class program40{
         for(int i = 0; i <= size-1; i++){
             for(int j = 0;j <size-1; j++){
                 if(arr[j]>arr[j+1]){
-                    temp = arr[j+1];
-                    arr[j+1]=arr[j];
-                    arr[j]=temp;
+                    temp = arr[j+1];//to allocate
+                    arr[j+1]=arr[j];//to push the largest element at the right 
+                    arr[j]=temp;//to push the smallest at the left by own
                 }
             }
         }
